@@ -75,11 +75,6 @@ export default function Hero() {
 
           <div className="relative animate-fadeInRight">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <img
-                src="https://images.pexels.com/photos/1988681/pexels-photo-1988681.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Art Student"
-                className="w-full h-auto"
-              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
