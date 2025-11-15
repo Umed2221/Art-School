@@ -44,6 +44,7 @@ export default function LessonCard({ lesson }: LessonCardProps) {
           src={lesson.thumbnail_url}
           alt={lesson.title}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+          
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

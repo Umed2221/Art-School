@@ -44,6 +44,7 @@ export default function LessonCard({ lesson }: LessonCardProps) {
           src={lesson.thumbnail_url}
           alt={lesson.title}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+         onError={(e) => (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x300?text=Music+Lesson')}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -91,8 +92,7 @@ export default function LessonCard({ lesson }: LessonCardProps) {
             <img
               src={lesson.teacher.avatar_url}
               alt={lesson.teacher.name}
-              className="w-8 h-8 rounded-full object-cover ring-2 ring-orange-100"
-           
+              className="w-8 h-8 rounded-full object-cover ring-2 ring-orange-100"onError={(e) => (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x300?text=Music+Lesson')}
             />
             <span className="text-sm text-gray-700 font-medium">{lesson.teacher.name}</span>
           </div>

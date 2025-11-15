@@ -162,6 +162,9 @@ export default function LessonDetail() {
                     src={lesson.teacher.avatar_url}
                     alt={lesson.teacher.name}
                     className="w-12 h-12 rounded-full object-cover ring-2 ring-orange-200"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = 'https://via.placeholder.com/48?text=Teacher';
+                    }}
                   />
                   <div>
                     <h3 className="font-semibold text-gray-900">{lesson.teacher.name}</h3>
